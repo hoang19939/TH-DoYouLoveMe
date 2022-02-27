@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<h1>To you love me</h1>
+<button onclick="clickyes()">yes</button>
+<button id="bt1" onmouseover="changeover()">No</button>
+
+<body>
+<script>
+    function clickyes() {
+        alert('I love You')
+    }
+
+    function changeover() {
+        let clickover = +document.getElementById('bt1');
+        let A = Math.round(Math.random() * window.innerHeight);
+        console.log('random', A)
+        let B = Math.round(Math.random() * window.innerWidth);
+        console.log('random', B)
+
+        clickover.style.left = A + 'px';
+        clickover.style.top = B + 'px';
+
+    }
+
+</script>
+
+
+</body>
+</html>
